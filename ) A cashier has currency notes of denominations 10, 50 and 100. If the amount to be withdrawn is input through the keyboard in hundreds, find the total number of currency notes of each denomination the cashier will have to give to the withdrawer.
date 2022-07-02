@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class CashierAndWidrawer{
+public static void main (String args []){
+int a, b,c, amount;
+Scanner sc = new Scanner (System.in);
+System.out.println("Enter any amount in mutiple of hundred");
+amount = sc.nextInt();
+a = amount/100;
+b = (amount%100)/50;
+c = ((amount%100)%50)/10;
+System.out.println("The withdrawer will receive "+a+" of 100 notes, "+b+" of 50 notes and "+c+" of 10 note.");
+}
+}

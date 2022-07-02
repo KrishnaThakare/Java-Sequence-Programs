@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class Task12{
+public static void main (String args[]){
+Scanner sc = new Scanner(System.in);
+int a, c, d;
+System.out.println("Enter an value as C");
+a = sc.nextInt();
+System.out.println("Enter an value as D");
+c = sc.nextInt();
+System.out.println("Value of C Before" + a);
+System.out.println("Value of D Before" + c);
+d = a;
+System.out.println("\nValue of C After" + c);
+System.out.println("Value of D After" + d);
+}
+}

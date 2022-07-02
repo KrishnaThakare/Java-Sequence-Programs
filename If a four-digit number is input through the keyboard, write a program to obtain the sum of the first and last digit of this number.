@@ -1,0 +1,12 @@
+import java.util.Scanner;
+class SumOfFirst_LastDigit{
+public static void main (String args []){
+int no, a,b;
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter any four digit number");
+no = sc.nextInt();
+a = no%10;
+b = (no/1000)%10;
+System.out.println("Sum of First digit and last digit of four digit number is " + (a+b));
+}
+}

@@ -1,0 +1,12 @@
+class LengthConversion{	
+	public static void main (String args []){	
+	double kilometers, centimeters, meters, millimeters;
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter Distance in Kilometer ");
+	kilometers = sc.nextDouble();
+	meters = kilometers * 1000;
+	centimeters = meters * 100;
+	millimeters = centimeter * 10;
+	System.out.println("kilometers = " + kilometres +"\nCentimeters = "+ centimeters+"\nmillimeteres = " +millimeteres);
+}
+}

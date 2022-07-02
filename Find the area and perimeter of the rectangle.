@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class Area_PerimeterOfRectangle{
+	public static void main(String[] args) {	
+	double width, length, area, perimeter ;	
+	Scanner sc = new Scanner (System.in);	
+	System.out.println("Enter Rectangle Width ");
+	width = sc.nextDouble();
+	System.out.println("Enter Rectangle Length ");
+	length = sc.nextDouble();
+	area = ( width * length );
+	perimeter = 2 * ( width * length );
+	System.out.println ("Area Of Rectangle = " + area);
+	System.out.println ("Perimeter Of Rectangle = " + perimeter);	
+}
+}

@@ -1,0 +1,12 @@
+import java.util.Scanner;
+class CovertTocentigradeAndFehrenheit{
+public static void main(String args[]){
+double fehrenheit, centigrade;
+Scanner sc = new Scanner (System.in);
+System.out.println("Enter the temperature in fehrenheit ");
+fehrenheit = sc.nextDouble();
+centigrade = ((fehrenheit - 32) * 0.5556);
+System.out.println("Temperature in fehrenheit " + fehrenheit);
+System.out.println("Converted temperature in Centigrade = " + centigrade);
+}
+}

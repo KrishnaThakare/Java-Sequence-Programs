@@ -1,0 +1,11 @@
+import java.util.Scanner;
+class AreaOfCube{
+	public static void main(String[] args) {	
+	int a1,a2;	
+	Scanner sc = new Scanner (System.in);			
+	System.out.println("Enter Area ");
+	a1 = sc.nextInt();
+	a2 = 6 * (a1 * a1);
+	System.out.println ("Area of cube = " + a2);	
+}
+}

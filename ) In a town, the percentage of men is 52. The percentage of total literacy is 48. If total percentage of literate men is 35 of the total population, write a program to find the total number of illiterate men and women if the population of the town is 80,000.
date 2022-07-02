@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class IlliterateMenWomen{
+public static void main (String args []){
+Scanner dc = new Scanner (System.in);
+double percentageofmen , totalliteracy, total_percentage_literate_men, illiterate_men, illiterate_women;
+percentageofmen = (0.52 * 80000);
+totalliteracy = (0.48 * 80000);
+total_percentage_literate_men = (0.35 * 80000);
+illiterate_men = (percentageofmen - total_percentage_literate_men);
+illiterate_women = (percentageofmen - 80000);
+System.out.println(illiterate_men);
+System.out.println(percentageofmen);
+System.out.println(total_percentage_literate_men);
+}
+}

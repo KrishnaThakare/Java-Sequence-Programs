@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class CircleRectangleArea{
+	public static void main(String[] args) {	
+	double width, length, area_rectangle, perimeter,  r, area_circle, circumference ;	
+	Scanner sc = new Scanner (System.in);	
+	System.out.println("Enter Rectangle Width ");
+	width = sc.nextDouble();
+	System.out.println("Enter Rectangle Length ");
+	length = sc.nextDouble();	
+	System.out.println("Enter Circle Radius ");
+	r = sc.nextDouble();	
+	area_rectangle = ( width * length );
+	perimeter = 2 * ( width * length );	
+	area_circle = 3.14 * (r * r);
+	circumference = (2 * 3.14 * r);	
+	System.out.println ("Area Of Rectangle = " + area_rectangle);
+	System.out.println ("Perimeter Of Rectangle = " + perimeter);	
+	System.out.println ("Area Of Circle = " + area_circle);
+	System.out.println ("Circumference Of Circle = " + circumference);	
+}
+}

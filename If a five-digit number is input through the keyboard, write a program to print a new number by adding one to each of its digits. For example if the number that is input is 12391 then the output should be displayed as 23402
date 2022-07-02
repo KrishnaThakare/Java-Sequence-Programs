@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class AddingOneToEachNumber{
+public static void main(String args []){
+int num,a,b,c,d,e;
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter a five digit number");
+num = sc.nextInt();
+a = (num/10000)%10;
+b= (num/1000)%10;
+c= (num/100)%10;
+d= (num/10)%10;
+e= (num) %10;
+System.out.println("a = " +a);
+System.out.println("b = " +b);
+System.out.println("c = " +c);
+System.out.println("d = " +d);
+System.out.println("e = " +e);
+System.out.println("Adding one to each of digits = "+(a+1)+(b+1)+(c+1)+(d+1)+(e+1));
+}
+}

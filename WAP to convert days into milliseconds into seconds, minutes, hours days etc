@@ -1,0 +1,15 @@
+
+  public static void main (String args[]){
+	Scanner sc = new Scanner (System.in);
+	int days, miliseconds, seconds, minutes, hours;
+	System.out.println("Enter Numbre Of Days ");
+	days = sc.nextInt();
+	miliseconds = (days * 1000 * 60 * 60 * 24 );
+	seconds = (days * 60 * 60 * 24 );
+	minutes = (days * 60 * 24 );
+	hours = (days * 24 );
+	System.out.println("Miliseconds = " + miliseconds );
+	System.out.println("Seconds = " + seconds );
+	System.out.println("Minutes = " + minutes );
+	System.out.println("Hours = " + hours );
+}

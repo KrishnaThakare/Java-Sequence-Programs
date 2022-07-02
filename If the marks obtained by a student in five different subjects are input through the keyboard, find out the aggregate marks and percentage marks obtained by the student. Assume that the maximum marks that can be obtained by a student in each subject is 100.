@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class Task9{
+public static void main(String args []){
+Scanner sc = new Scanner(System.in);
+double marathi, english, science, mathematics, sanskrit, aggregate, addition, percentage;
+System.out.println("\nEnter the marks obtained in Marathi ");
+marathi = sc.nextInt();
+System.out.println("Enter the marks obtained in English ");
+english = sc.nextInt();
+System.out.println("Enter the marks obtained in Science ");
+science = sc.nextInt();
+System.out.println("Enter the marks obtained in Mathematics ");
+mathematics = sc.nextInt();
+System.out.println("Enter the marks obtained in Sanskrit ");
+sanskrit = sc.nextInt();
+addition = (marathi + english + science + mathematics + sanskrit);
+aggregate = (((marathi + english + science + mathematics + sanskrit) / 500) * 100 );
+percentage = ((addition/500) * 100 );
+System.out.println("Aggregate Obtained by the student is " + aggregate + "%");
+System.out.println("Percentage Obtained by the student is " + percentage + "%");
+}
+}

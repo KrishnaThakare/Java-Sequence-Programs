@@ -1,0 +1,10 @@
+import java.util.Scanner;
+class SumOfFiveDigitNumber{
+public static void main(String args[]){
+int n, sum;
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter any 5 digit number");
+n = sc.nextInt();
+sum=n%10+(n/10)%10+(n/100)%10+(n/1000)%10+(n/10000);
+System.out.println("Sum of 5 digit number = "+ sum );
+}

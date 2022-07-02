@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class SingleItemPrice{
+public static void main (String args[]){
+Scanner sc = new Scanner(System.in);
+double selling_price, earned_profit, single_itemprice, unit_profitprice;
+System.out.println("Enter selling price of product");
+selling_price = sc.nextDouble();
+System.out.println("Enter profit price of product");
+earned_profit = sc.nextDouble();
+single_itemprice = (selling_price / 15);
+unit_profitprice = (earned_profit / 15);
+System.out.println("Cost Price of a Single Item " + (single_itemprice + unit_profitprice));
+}
+}

@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class DistaceOftwoCities{
+public static void main (String args[]){	
+	double city1kilometer, centimeters1, feets1, inches1, meters1, millimeters1;
+	double city2kilometer, centimeters2, feets2, inches2, meters2, millimeters2;
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter The Distance of City 1 in Kilometer ");
+	city1kilometer = sc.nextInt();
+	System.out.println("Enter The Distance of City 2 in Kilometer ");
+	city2kilometer = sc.nextInt();
+	centimeters1 = city1kilometer * 100000;
+	feets1 = city1kilometer * 3280.84;
+	inches1 = city1kilometer * 39370.08;
+	meters1 = city1kilometer * 1000;
+	millimeters1 = city1kilometer * 1000000;
+	centimeters2 = city2kilometer * 100000;
+	feets2 = city2kilometer * 3280.84;
+	inches2 = city2kilometer * 39370.08;
+	meters2 = city2kilometer * 1000;
+	millimeters2 = city2kilometer * 1000000;
+	System.out.println("Distance Bitween Cities in Meters is " + (meters1 - meters2));
+	System.out.println("Distance Bitween Cities in Feets is " + (feets1 - feets2));
+	System.out.println("Distance Bitween Cities in Inches is " + (inches1 - inches2));
+	System.out.println("Distance Bitween Cities in Centi-Meter is " + (centimeters1 - centimeters2));	
+}
+}

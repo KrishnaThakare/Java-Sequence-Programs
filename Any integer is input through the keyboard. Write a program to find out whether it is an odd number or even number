@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class Task8{
+class EvenOdd{
 public static void main(String args[]){
 int num;
 Scanner sc = new Scanner(System.in);

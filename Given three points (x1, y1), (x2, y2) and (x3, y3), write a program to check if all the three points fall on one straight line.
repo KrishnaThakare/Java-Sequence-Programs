@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class ThreepointFallOnStraightLine{
+public static void main(String args []){
+Scanner sc = new Scanner(System.in);
+double slope1, slope2, slope3, x1,x2,x3,y1,y2,y3;
+System.out.println("Enter point X1 and Y1");
+x1 = sc.nextDouble();
+y1 = sc.nextDouble();
+System.out.println("Enter point X2 and Y2");
+x2 = sc.nextDouble();
+y2 = sc.nextDouble();
+System.out.println("Enter point X3 and Y3");
+x3 = sc.nextDouble();
+y3 = sc.nextDouble();
+slope1 = (y2 - y1)/(x2 - x1);
+slope2 = (y3 - y2)/(x3 - x2);
+slope3 = (y3 - y1)/(x3 - x1);
+if(slope1 == slope2){
+	if(slope2 == slope3)
+		if(slope1 == slope3)
+   			System.out.println("All three points fall on one straight line");}
+else
+   System.out.println("Points not fall on one straight line");
+}
+}

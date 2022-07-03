@@ -1,0 +1,17 @@
+import java.util.Scanner;
+class SellerProfitAndLoss{
+public static void main(String args []){
+	int cost_price, selling_price, profit, loss_incured;
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter the selling price of item");
+	selling_price = sc.nextInt();
+	System.out.println("Enter the cost of item");
+	cost_price = sc.nextInt();
+	profit = selling_price - cost_price;
+	loss_incured = cost_price - selling_price;	
+	if(selling_price > cost_price)
+	   System.out.println("Seller made a profit of "+ profit);
+	else
+	   System.out.println("Seller incured loss of "+ loss_incured);
+}
+}

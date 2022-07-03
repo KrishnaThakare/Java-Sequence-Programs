@@ -1,25 +1,21 @@
 import java.util.Scanner;
-class ReverseNumberAndEqual{
+class ReverseNumberAndEqualsToOriginalNumber{
 public static void main(String args []){
 	Scanner sc = new Scanner(System.in);
-	int num,a,b,c,d,reverse,d1,d2,d3,d4,d5;
+	int num,a,b,c,d,e,reverse;
 	System.out.println("Enter a 5 digit number");
 	num = sc.nextInt();
-	a=num/10;
-	d5=num%10;
-	b=a/10;
-	d4=a%10;
-	c=b/10;
-	d3=b%10;
-	d=c/10;
-	d2=c%10;
-	d1=d%10;
-	reverse=d5*10000 + d4*1000 + d3*100 + d2*10 + d1*1;    
-	/*System.out.println("d1 = " +d1);
-	System.out.println("d2 = " +d2);
-	System.out.println("d3 = " +d3);
-	System.out.println("d4 = " +d4);
-	System.out.println("d5 = " +d5);*/
+	a=num%10;	
+	b=(num/10)%10;
+	c=(num/100)%10;	
+	d=(num/1000)%10;
+	e=(num/10000)%10;	
+	reverse=a*10000 + b*1000 + c*100 + d*10 + e*1;    
+	System.out.println("a = " +a);
+	System.out.println("b = " +b);
+	System.out.println("c = " +c);
+	System.out.println("d = " +d);
+	System.out.println("e = " +e);
 	System.out.println("Reverse number of "+num+" is "+reverse);
 	if (num==reverse)
 	System.out.println("Both the numbers are equal");

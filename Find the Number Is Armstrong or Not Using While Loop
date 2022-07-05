@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class Armstrong_Number{
+public static void main(String args []){
+int d4, d3, d2, d1, Armstrong_Number, n1;
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter any 4 digit number to  Armstrong Number");
+n1 = sc.nextInt();
+d4 = n1 % 10;
+d3 = (n1/10)%10;
+d2 = (n1/100)%10;
+d1 = (n1/1000)%10;
+Armstrong_Number = ((d4*d4*d4)+(d3*d3*d3)+(d2*d2*d2)+(d1*d1*d1));
+if(n1==Armstrong_Number)
+   System.out.println("Number is Armstrong");
+else
+   System.out.println("Number is Not Armstrong");
+
+  }
+}

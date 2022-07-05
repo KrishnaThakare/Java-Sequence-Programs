@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class MultiplicationTable {
+	public static void main(String[] args) {
+		int i,num;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number for multification table");
+		num = sc.nextInt();
+		System.out.println("Multification table of "+ num);
+		for(i=1;i<=10;i++){
+			System.out.println(num + " * " + i + " = " + (num*i));
+		}
+	}
+}

@@ -1,0 +1,28 @@
+import java.util.Scanner;
+class PalindromicNumber{
+public static void main(String args[]){
+Scanner sc = new Scanner(System.in);
+int num, d1=0,d2=0,d3=0,d4=0,d5=0, reverse_number1, reverse_number2, reverse_number3;
+System.out.print("Enter any number: ");
+num = sc.nextInt();
+d5 = num % 10;
+d4 = (num/10)%10;
+d3 = (num/100)%10;
+d2 = (num/1000)%10;
+d1 = (num/10000)%10;
+reverse_number1 = (d5*10000+d4*1000+d3*100+d2*10+d1);
+reverse_number2 = (d5*1000+d4*100+d3*10+d2);
+reverse_number3 = (d5*100+d4*10+d3);
+if(num>=10000 || num<=99999)
+    if(num == reverse_number1)
+   	System.out.println(num + " Number is palindrome number");
+if(num>=1000 || num<=9999)
+    if(num == reverse_number2)
+   	System.out.println(num + " Number is palindrome number");
+if(num>=100 || num<999)
+    if(num == reverse_number3)
+   	System.out.println(num + " Number is palindrome number");
+if((num != reverse_number1) & (num != reverse_number2) & (num != reverse_number3))
+	System.out.println(num + " Number is not palindrome number");	
+     }
+ }

@@ -2,7 +2,7 @@ import java.util.Scanner;
 class PalindromicNumber{
 public static void main(String args[]){
 Scanner sc = new Scanner(System.in);
-int num, d1=0,d2=0,d3=0,d4=0,d5=0, reverse_number1, reverse_number2, reverse_number3, reverse_number3;
+int num, d1=0,d2=0,d3=0,d4=0,d5=0, reverse_number1, reverse_number2, reverse_number3, reverse_number4;
 System.out.print("Enter any number: ");
 num = sc.nextInt();
 d5 = num % 10;

@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class GreaterAreaOrPerimeter{
+public static void main(String args []){
+int area, perimeter, l, b;
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter length and bredth");
+l = sc.nextInt();
+b = sc.nextInt();
+area = l * b ;
+perimeter = 2 * area ;
+if(area > perimeter)
+   System.out.println("Area is greater than perimeter with the lentgh "+ l + " and breadth is "+ b);
+else
+   System.out.println("Perimeter is greater than area with the lentgh "+ l + " and breadth is "+ b);
+   }
+}

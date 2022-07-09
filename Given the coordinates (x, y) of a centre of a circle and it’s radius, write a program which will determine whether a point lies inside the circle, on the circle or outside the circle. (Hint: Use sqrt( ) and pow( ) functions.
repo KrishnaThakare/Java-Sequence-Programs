@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class CirclePointLies {
+	public static void main(String[] args) {
+		double x, x1 = 3, y, y1 = 5, d, radius, distance1, distance2;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the value of coordinate x");
+		x = sc.nextDouble();
+		System.out.println("Enter the value of coordinate y");
+		y = sc.nextDouble();
+		System.out.println("Enter the value of radius");
+		radius = sc.nextDouble();
+		distance2 = ((x - x1)*(x - x1)) + ((y - y1) * (y - y1));
+		distance1 = Math.sqrt(distance2);
+		if(radius>distance1)
+			System.out.println("Point lies inside of the circle");
+		else if(radius < distance1)
+			System.out.println("Point lies outside of the circle");
+		else if(radius == distance1)
+			System.out.println("Point lies on the circle");
+	}
+
+}

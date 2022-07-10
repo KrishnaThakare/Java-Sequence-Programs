@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class GregorianCalender {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int year, diff_year, ref_year = 1900, leap_year = 0, total_days, day;
+		System.out.println("Enter a year");
+		year = sc.nextInt();
+		diff_year = year - ref_year;
+		while(ref_year < year){
+			if(year % 100 == 0){
+				if(year % 400 == 0){
+					leap_year++;
+				}
+			}
+			else{
+				if(year % 4 == 0){
+					leap_year++;
+				}
+			}
+			ref_year++;
+		}
+		total_days = ((diff_year - leap_year) * 365) + (leap_year * 366);
+		day = total_days % 7;		
+		if(day == 0)
+			System.out.println("Monday");
+		if(day == 1)
+			System.out.println("Tuesday");
+		if(day == 2)
+			System.out.println("Wednesday");
+		if(day == 3)
+			System.out.println("Thursday");
+		if(day == 4)
+			System.out.println("Friday");
+		if(day == 5)
+			System.out.println("Saturday");
+		if(day == 6)
+			System.out.println("Sunday");	
+	}
+}

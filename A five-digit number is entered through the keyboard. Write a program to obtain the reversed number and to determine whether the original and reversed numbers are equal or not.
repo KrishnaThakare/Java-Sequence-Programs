@@ -1,3 +1,4 @@
+// checking
 import java.util.Scanner;
 class ReverseNumberAndEqualsToOriginalNumber{
 public static void main(String args []){

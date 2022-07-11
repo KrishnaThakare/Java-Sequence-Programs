@@ -1,0 +1,28 @@
+package com.conceptual;
+
+public class Design3 {
+	public static void main(String[] args) {
+		int i, j, k, l;
+		for(i=1;i<=1;i++) {
+			System.out.println("43210");			
+			
+			for(j=1;j<=1;j++) {
+				System.out.println("10101");
+				
+				for(k=1;k<=1;k++) {
+					System.out.println("21000");
+					
+					for(l=1;l<=1;l++) {
+						System.out.println("10000");
+						
+					}
+				}
+			}
+		}
+		
+	}
+}
+//43210
+//32100
+//21000
+//10000
